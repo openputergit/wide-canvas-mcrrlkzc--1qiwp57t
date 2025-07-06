@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftPE - Powering India's Fastest Fintech Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e1f4ff 100%);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="https://swiftpe.com/assets/images/swiftpe.png" alt="SwiftPE Logo" class="h-12">
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium">Benefits</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Join Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 space-y-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800">Welcome to SwiftPE</h1>
+                <p class="text-xl text-gray-600">Your Gateway to Powerful Digital Payments</p>
+                <div class="space-x-4">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Join Now</button>
+                    <button class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition">Explore Services</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800" alt="Digital Payment" class="w-full float-animation rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card p-6 rounded-xl bg-white shadow-lg">
+                    <i class="bi bi-credit-card text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">AEPS & BBPS</h3>
+                    <p class="text-gray-600 mt-2">Secure authentication and bill payment services</p>
+                </div>
+                <div class="service-card p-6 rounded-xl bg-white shadow-lg">
+                    <i class="bi bi-phone-fill text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Mobile Recharge</h3>
+                    <p class="text-gray-600 mt-2">Quick and easy mobile recharge solutions</p>
+                </div>
+                <div class="service-card p-6 rounded-xl bg-white shadow-lg">
+                    <i class="bi bi-arrow-left-right text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Money Transfer</h3>
+                    <p class="text-gray-600 mt-2">Fast and secure money transfer services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose SwiftPE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-effect p-6 rounded-xl text-center">
+                    <i class="bi bi-lightning-charge text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Instant Settlements</h3>
+                    <p class="text-gray-600 mt-2">Get your money instantly</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl text-center">
+                    <i class="bi bi-graph-up text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">High Commission</h3>
+                    <p class="text-gray-600 mt-2">Best rates in the industry</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl text-center">
+                    <i class="bi bi-headset text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">24x7 Support</h3>
+                    <p class="text-gray-600 mt-2">Always here to help you</p>
+                </div>
+                <div class="glass-effect p-6 rounded-xl text-center">
+                    <i class="bi bi-shield-check text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Secure Platform</h3>
+                    <p class="text-gray-600 mt-2">Enterprise-grade security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md mx-auto glass-effect p-8 rounded-xl">
+                <h2 class="text-3xl font-bold text-center mb-8">Become a Partner</h2>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <option>Select Business Type</option>
+                            <option>Retail Store</option>
+                            <option>Online Business</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://swiftpe.com/assets/images/swiftpe.png" alt="SwiftPE Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Powering India's Fastest Fintech Network</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 SwiftPE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
